@@ -1,6 +1,6 @@
 # E-commerce product page
 
-![Design preview for the E-commerce product page coding challenge](.project/src/assets/design/desktop-preview.jpg)
+![Design preview for the E-commerce product page coding challenge](project/src/assets/design/desktop-preview.jpg)
 
 ## Welcome! 👋
 
