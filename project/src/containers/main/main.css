@@ -1,0 +1,236 @@
+.Main {
+  width: 65%;
+  max-width: 1000px;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  gap: 5em;
+  margin-top: 5em;
+  position: relative;
+}
+
+.Main-content {
+  flex-basis: 50%;
+}
+
+.Main-content-heading {
+  margin-top: 5em;
+}
+
+.Main-content-heading h4 {
+  color: var(--orange);
+  font-size: 0.8rem;
+  margin-bottom: 1em;
+}
+
+.Main-content-heading h1 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.Main-content-text p {
+  color: var(--dark-grayish-blue);
+  font-size: 0.85rem;
+  line-height: 1.75em;
+}
+
+.Main-content-text {
+  margin-bottom: 1.5em;
+}
+
+.Main-content-price {
+  display: flex;
+  flex-direction: column;
+}
+
+.Main-content-price-top {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1em;
+  margin-bottom: 0.5em;
+}
+
+.Main-content-price-top h2 {
+  font-size: 1.75rem;
+}
+
+.Main-content-price-top h3 {
+  color: var(--orange);
+  font-size: 0.9rem;
+  background-color: var(--pale-orange);
+  padding: 0.25em;
+  border-radius: 5px;
+}
+
+.Main-content-price-bottom {
+  margin-bottom: 2em;
+  height: 100%;
+}
+
+.Main-content-price-bottom h4 {
+  height: 100%;
+  color: var(--grayish-blue);
+  font-weight: 600;
+  text-decoration: line-through;
+}
+
+.Main-content-cart {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1em;
+}
+
+.Main-content-cart-amount {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.Main-content-cart-amount button:hover {
+  cursor: pointer;
+  color: var(--grayish-blue);
+}
+
+.Main-content-cart-amount button {
+  color: var(--orange);
+  background-color: var(--light-grayish-blue);
+  border: none;
+  outline: none;
+  height: 4rem;
+  padding: 0 0.75em;
+  padding-bottom: 0.25em;
+  font-size: 2rem;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Main-content-cart-amount button:first-child {
+  border-top-left-radius: 7px;
+  border-bottom-left-radius: 7px;
+}
+
+.Main-content-cart-amount button:last-child {
+  border-top-right-radius: 7px;
+  border-bottom-right-radius: 7px;
+}
+
+.Main-content-cart-amount h4 {
+  background-color: var(--light-grayish-blue);
+  width: 2rem;
+  height: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.Main-content-cart-add {
+  flex: 2;
+  display: grid;
+  grid-template-columns: auto;
+  align-items: center;
+}
+
+.Main-content-cart-add img {
+  z-index: 1;
+  grid-column: 1;
+  grid-row: 1;
+  margin-left: 10%;
+}
+
+.Main-content-cart-add button {
+  height: 4rem;
+  width: 100%;
+  color: var(--white);
+  background-color: var(--orange);
+  border: none;
+  outline: none;
+  border-radius: 7px;
+  font-weight: 700;
+  font-size: 1rem;
+  z-index: 0;
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.Main-content-cart-add button:hover {
+  cursor: pointer;
+  opacity: 70%;
+}
+
+@media screen and (max-width: 1100px) {
+  .Main {
+    flex-direction: column;
+    width: 70%;
+    margin-top: 4em;
+  }
+
+  .Main-content-heading {
+    margin-top: 0;
+  }
+}
+
+@media screen and (max-width: 510px) {
+  .Main {
+    width: 100%;
+    margin-top: 2em;
+    gap: 0;
+  }
+
+  .Main-pictures-small {
+    display: none;
+  }
+
+  .Main-pictures-large img {
+    border-radius: 0;
+  }
+
+  .Main-content {
+    padding: 0 1.5em;
+  }
+
+  .Main-content-heading h1 {
+    font-size: 2rem;
+    margin-bottom: 0.5em;
+  }
+
+  .Main-content-text p {
+    font-size: 1rem;
+  }
+
+  .Main-content-price {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .Main-content-price-bottom h4 {
+    margin-top: 0.5em;
+  }
+
+  .Main-content-cart {
+    flex-direction: column;
+  }
+
+  .Main-content-cart-add,
+  .Main-content-cart-amount {
+    width: 100%;
+  }
+
+  .Main-content-cart-amount button {
+    width: 15%;
+  }
+
+  .Main-content-cart-amount h4 {
+    width: 70%;
+  }
+}

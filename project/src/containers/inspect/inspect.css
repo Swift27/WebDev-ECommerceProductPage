@@ -1,0 +1,56 @@
+.Inspect {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  width: 100%;
+  height: 130%;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.Inspect-pictures {
+  width: 30%;
+  margin: auto;
+  margin-top: 5em;
+}
+
+@media screen and (max-width: 1600px) {
+  .Inspect-pictures {
+    width: 35%;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .Inspect-pictures {
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .Inspect-pictures {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .Inspect {
+    height: 110%;
+  }
+
+  .Inspect-pictures {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .Inspect-pictures {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 510px) {
+  .Inspect {
+    display: none;
+  }
+}

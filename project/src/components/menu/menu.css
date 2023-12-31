@@ -1,0 +1,71 @@
+.Menu {
+  display: flex;
+  flex-direction: row;
+  gap: 2em;
+  z-index: 2;
+}
+
+.Menu a {
+  color: var(--dark-grayish-blue);
+}
+
+.Menu a:hover {
+  color: var(--black);
+  border-bottom: 2px solid var(--orange);
+}
+
+.Menu-close {
+  display: none;
+}
+
+@media screen and (max-width: 940px) {
+  .Menu {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    display: flex;
+    flex-direction: column;
+    padding: 2em;
+    background: linear-gradient(
+      to right,
+      white 0%,
+      white 25%,
+      rgba(0, 0, 0, 0.5) 25%,
+      rgba(0, 0, 0, 0.5) 100%
+    );
+    width: 200%;
+    height: 110%;
+  }
+
+  .Menu-close {
+    display: flex;
+    margin-bottom: 1.5em;
+  }
+
+  .Menu p {
+    margin-bottom: 0.5em;
+  }
+
+  .Menu a {
+    color: var(--black);
+    font-weight: bold;
+  }
+}
+
+@media screen and (max-width: 510px) {
+  .Menu {
+    background: linear-gradient(
+      to right,
+      white 0%,
+      white 33%,
+      rgba(0, 0, 0, 0.5) 33%,
+      rgba(0, 0, 0, 0.5) 100%
+    );
+    height: 100%;
+  }
+
+  .Menu a {
+    color: var(--black);
+    font-weight: bold;
+  }
+}
